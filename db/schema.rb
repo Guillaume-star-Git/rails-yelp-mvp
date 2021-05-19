@@ -30,5 +30,10 @@ ActiveRecord::Schema.define(version: 2021_05_19_131431) do
     t.index ["restaurant_id"], name: "index_reviews_on_restaurant_id"
   end
 
+  create_table "update_restaurants", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   add_foreign_key "reviews", "restaurants"
 end
