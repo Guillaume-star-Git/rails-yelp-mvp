@@ -1,0 +1,2 @@
+class UpdateRestaurant < ApplicationRecord
+end
